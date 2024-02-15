@@ -68,7 +68,7 @@ span {
 }
 
 .info h1 span {
-    color: #C6DEC6; /* Change color for the name span */
+    color: #C6DEC6;
 }
 
 .info a {
@@ -124,7 +124,6 @@ span {
     background: #758173;
 }
 
-/* Add this to center the media screen */
 @media screen and (max-width: 768px) {
     .intro {
         flex-direction: column-reverse;
@@ -143,7 +142,6 @@ span {
     }
 }
 
-/* Adjust the About Me section styles */
 .about-me {
     display: flex;
     max-width: 60%;
@@ -153,10 +151,9 @@ span {
     font-size: 18px;
     letter-spacing: 1px;
     line-height: 24px;
-    font-family: sans-serif; /* Add this line to set the font family */
+    font-family: sans-serif;
 }
 
-/* Add this to make About Me section responsive and centered */
 @media screen and (max-width: 768px) {
     .about-me {
         flex-direction: column-reverse;
@@ -165,18 +162,18 @@ span {
     }
 
     .photo-about {
-        max-width: 80%; /* Adjust the width as needed */
+        max-width: 80%;
         margin-right: auto;
         margin-left: auto;
     }
 
     .text {
         max-width: 100%;
-        margin-top: 20px; /* Adjust top margin for text */
+        margin-top: 20px;
     }
 }
 
-/* Add this to insert an image on the left side */
+
 .photo-about {
     max-width: 30%;
     margin-right: 5%;
@@ -187,11 +184,10 @@ span {
     border-radius: 10px;
 }
 
-/* Adjust the font styles for the About Me section */
 .about-me h2,
-.about-me .text p, /* Apply the color to all h4 elements within the About Me section */
-h4 { /* Apply the color to all h4 elements globally */
+.about-me .text p, 
+h4 { 
     font-size: 24px;
     margin-bottom: 10px;
-    color: #C6DEC6; /* Set the color for h4 elements */
+    color: #C6DEC6; 
 }
