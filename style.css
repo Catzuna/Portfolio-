@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #1E1E1E;
+    font-family: sans-serif;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    padding: 15px 0;
+    align-items: baseline;
+    justify-content: flex-end;
+}
+
+ul {
+    margin-top: 0;
+    list-style: none;
+    display: flex;
+}
+
+ul li {
+    padding: 10px 16px;
+}
+
+ul li a {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: .4s ease;
+}
+
+ul li a:hover {
+    color: #C6DEC6;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    margin: 6% 7%;
+}
+
+.info {
+    color: #FFFFFF;
+    max-width: 60%;
+}
+
+.info h3 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    color: #f0f0f0;
+}
+
+span {
+    color: #A9C5A0;
+}
+
+.info span + * {
+    color: #FFFFFF;
+}
+
+.info h1 span {
+    color: #C6DEC6; /* Change color for the name span */
+}
+
+.info a {
+    text-decoration: none;
+    color: #FFFFFF;
+    background: #1a1a1a;
+    margin: 26px 0;
+    padding: 10px 18px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: .4s ease;
+}
+
+.info a:hover {
+    background: #758173;
+}
+
+.photo {
+    max-width: 30%;
+}
+
+.photo img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    background-color: #758173;
+    color: #FFFFFF;
+}
+
+.download-cv {
+    text-decoration: none;
+    color: #FFFFFF;
+    background: #1a1a1a;
+    margin-top: 10px;
+    padding: 10px 18px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: .4s ease;
+}
+
+.download-cv:hover {
+    background: #758173;
+}
+
+/* Add this to center the media screen */
+@media screen and (max-width: 768px) {
+    .intro {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .info,
+    .about-me {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .photo,
+    .photo-about {
+        max-width: 100%;
+    }
+}
+
+/* Adjust the About Me section styles */
+.about-me {
+    display: flex;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: 7%;
+    color: #FFFFFF;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    font-family: sans-serif; /* Add this line to set the font family */
+}
+
+/* Add this to make About Me section responsive and centered */
+@media screen and (max-width: 768px) {
+    .about-me {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .photo-about {
+        max-width: 80%; /* Adjust the width as needed */
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .text {
+        max-width: 100%;
+        margin-top: 20px; /* Adjust top margin for text */
+    }
+}
+
+/* Add this to insert an image on the left side */
+.photo-about {
+    max-width: 30%;
+    margin-right: 5%;
+}
+
+.photo-about img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Adjust the font styles for the About Me section */
+.about-me h2,
+.about-me .text p, /* Apply the color to all h4 elements within the About Me section */
+h4 { /* Apply the color to all h4 elements globally */
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #C6DEC6; /* Set the color for h4 elements */
+}
