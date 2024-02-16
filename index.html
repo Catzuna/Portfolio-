@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,19 +18,19 @@
         <!-- Navbar -->
         <div class="navbar">
             <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">PROJECTS</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
         </div>
 
-        <!-- Introduction of Me -->
-        <div class="intro">
+        <!-- Intro -->
+        <div id="home" class="intro smooth-transition">
             <div class="info">
                 <h3>Mreow It's</h3>
                 <h1><span>Joshua Adrian</span> Don</h1>
-                <h3>Bachelor of Science in<span> Information Technology</span></h3>
+                <h3>Bachelor of Science in <span>Information Technology</span></h3>
                 <h4>As a celestial-minded college student programmer, I'm aligning my skills with the cosmic forces of web development. With a celestial passion for learning and a commitment to exploring the mystical realms of coding, I'm excited to offer my services as a freelance web developer. Together, let's weave enchanting digital constellations that illuminate your projects in the vast cosmos of the online universe!</h4>
 
                 <a href="https://www.facebook.com/i6Neko" class="fa fa-facebook"></a>
@@ -37,7 +38,8 @@
                 <a href="https://www.instagram.com/sojzu_?igsh=aDk5c3V3N25oZ3o0" class="fa fa-instagram"></a>
                 <a href="https://x.com/_catzuna?t=kqR3KHg7iBG3RmPbBhOA7g&s=09" class="fa fa-github"></a>
                 <br>
-                <a href="https://drive.google.com/file/d/1Z78QO94zQOa3mEp2uWMHNlN_XsHGWu-S/view?usp=drivesdk" class="download-cv">Download CV</a>
+                <a href="https://drive.google.com/file/d/1Z78QO94zQOa3mEp2uWMHNlN_XsHGWu-S/view?usp=drivesdk"
+                    class="download-cv">Download CV</a>
             </div>
             <div class="photo">
                 <img src="Meow.jpg" alt="Mreow">
@@ -45,7 +47,7 @@
         </div>
 
         <!-- About Me Section -->
-        <div class="about-me">
+        <div id="about" class="about-me smooth-transition">
             <div class="photo-about">
                 <img src="YourPhoto.jpg" alt="About Me Photo">
             </div>
@@ -53,12 +55,69 @@
                 <h1>About <span>Me</span></h1>
                 <h3>I.T Student</h3>
                 <h4>Hello! I'm a 3rd-year college student pursuing a Bachelor's in Information Technology. My academic journey has equipped me with a good foundation in coding, web development, and database management. I thrive on solving complex problems and creating efficient, user-friendly solutions. Beyond the world of technology, I have a unique skill set that extends to mastering the Rubik's Cube and exploring galaxies. These diverse interests fuel my creativity and analytical thinking, contributing to a well-rounded approach in both my academic and personal pursuits.</h4>
-                
-                <a href="#" class="see-more">See More</a>
+
+                <a href="#portfolio" class="see-more">See More</a>
             </div>
         </div>
+
+        <!-- Portfolio Section -->
+        <div id="portfolio" class="portfolio smooth-transition">
+            <div class="portfolio-item">
+                <h1>Port<span>folio</span></h1>
+                <img src="Project1.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <a href="#">Project 1 Link</a>
+            </div>
+            <div class="portfolio-item">
+                <img src="Project2.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+                <a href="#">Project 2 Link</a>
+            </div>
+            <div class="portfolio-item">
+                <img src="Project3.jpg" alt="Project 3">
+                <h3>Project 3</h3>
+                <a href="#">Project 3 Link</a>
+            </div>
+            <div class="portfolio-item">
+                <img src="Project4.jpg" alt="Project 4">
+                <h3>Project 4</h3>
+                <a href="#">Project 4 Link</a>
+            </div>
+            <div class="portfolio-item">
+                <img src="Project5.jpg" alt="Project 5">
+                <h3>Project 5</h3>
+                <a href="#">Project 5 Link</a>
+            </div>
+            <div class="portfolio-item">
+                <img src="Project6.jpg" alt="Project 6">
+                <h3>Project 6</h3>
+                <a href="#">Project 6 Link</a>
+            </div>
+        </div>
+
+        <!-- Contact Me Section -->
+        <div id="contact" class="contact-me smooth-transition">
+            <h1>Contact <span>Me</span></h1>
+            <div class="form-container">
+                <form>
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full-name" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
     </div>
 
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
