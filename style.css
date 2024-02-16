@@ -173,7 +173,6 @@ span {
     }
 }
 
-
 .photo-about {
     max-width: 30%;
     margin-right: 5%;
@@ -184,7 +183,7 @@ span {
     border-radius: 10px;
 }
 
-.about-me h2,
+.about-me h1,
 .about-me .text p, 
 h4 { 
     font-size: 24px;
@@ -204,5 +203,81 @@ h4 {
 }
 
 .see-more:hover {
+    background: #758173;
+}
+
+.portfolio {
+    text-align: center;
+    margin-top: 20px;
+    color: #FFFFFF; 
+}
+
+.portfolio-item {
+    display: inline-block;
+    margin: 10px;
+    text-align: center; 
+}
+
+.portfolio-item img {
+    width: 200px;
+    height: 150px;
+    border: 1px solid #C6DEC6; 
+    border-radius: 8px;
+}
+
+.portfolio-item h3 {
+    margin: 10px 0;
+    font-size: 24px; 
+    color: #C6DEC6; 
+}
+
+.portfolio-item a {
+    color: #C6DEC6; 
+    text-decoration: none;
+}
+
+.portfolio-item a:hover {
+    text-decoration: underline;
+}
+
+.contact-me {
+    text-align: center;
+    margin-top: 20px;
+    color: #FFFFFF; 
+}
+
+.form-container {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #C6DEC6;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #C6DEC6;
+    border-radius: 8px;
+    background-color: #1a1a1a;
+    color: #FFFFFF;
+}
+
+button {
+    background-color: #1a1a1a;
+    color: #FFFFFF;
+    padding: 10px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+button:hover {
     background: #758173;
 }
