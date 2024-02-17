@@ -20,6 +20,30 @@ document.addEventListener('DOMContentLoaded', function () {
         element.style.transition = 'all 0.3s ease-in-out';
     });
 
+    let timeout;
+
+    // Function to show the navbar
+    function showNavbar() {
+        const navbar = document.querySelector('.navbar');
+        navbar.style.opacity = '1';
+        clearTimeout(timeout);
+    }
+
+    // Function to hide the navbar after a certain period of inactivity
+    function hideNavbar() {
+        const navbar = document.querySelector('.navbar');
+        timeout = setTimeout(() => {
+            navbar.style.opacity = '0';
+        }, 3000);
+    }
+
+    // Event listeners for mousemove and click to show the navbar
+    document.addEventListener('mousemove', showNavbar);
+    document.addEventListener('click', showNavbar);
+
+    // Event listener to hide the navbar after a certain period of inactivity
+    document.addEventListener('mouseleave', hideNavbar);
+
     // Glowing effect on hover for project item text
     document.querySelectorAll('.portfolio-item h3').forEach(item => {
         item.addEventListener('mouseover', function () {
@@ -56,4 +80,16 @@ document.addEventListener('DOMContentLoaded', function () {
             this.style.boxShadow = '0 0 10px rgba(198, 222, 198, 0.5)';
         });
     });
+
+    // Sticky Navbar
+    window.onscroll = function () {
+        const navbar = document.querySelector('.navbar');
+        const sticky = navbar.offsetTop;
+
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add('sticky');
+        } else {
+            navbar.classList.remove('sticky');
+        }
+    };
 });
