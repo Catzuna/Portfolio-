@@ -281,3 +281,49 @@ button {
 button:hover {
     background: #758173;
 }
+
+.navbar {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.navbar.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333; 
+    z-index: 1000;
+}
+
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; 
+}
+
+.text {
+    width: 50%;
+}
+
+.photo-about {
+    width: 40%; /
+}
+
+.text h1 {
+    font-size: 2em; 
+    margin-bottom: 10px;
+}
+
+.text h3 {
+    font-size: 1.5em;
+    margin-bottom: 8px;
+}
+
+.text h4 {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.photo-about img {
+    width: 100%;
+}
