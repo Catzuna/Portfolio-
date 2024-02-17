@@ -144,37 +144,17 @@ span {
 
 .about-me {
     display: flex;
-    max-width: 60%;
-    margin-left: auto;
-    margin-right: 7%;
-    color: #FFFFFF;
-    font-size: 18px;
-    letter-spacing: 1px;
-    line-height: 24px;
-    font-family: sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; 
 }
 
-@media screen and (max-width: 768px) {
-    .about-me {
-        flex-direction: column-reverse;
-        align-items: center;
-        text-align: center;
-    }
-
-    .photo-about {
-        max-width: 80%;
-        margin-right: auto;
-        margin-left: auto;
-    }
-
-    .text {
-        max-width: 100%;
-        margin-top: 20px;
-    }
+.text {
+    width: 50%;
 }
 
 .photo-about {
-    max-width: 30%;
+    width: 30%;
     margin-right: 5%;
 }
 
@@ -294,19 +274,8 @@ button:hover {
     z-index: 1000;
 }
 
-.about-me {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px; 
-}
-
 .text {
-    width: 50%;
-}
-
-.photo-about {
-    width: 40%; /
+    max-width: 50%;
 }
 
 .text h1 {
