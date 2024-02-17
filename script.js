@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const navbar = document.querySelector('.navbar');
         navbar.style.opacity = '1';
         clearTimeout(timeout);
+        hideNavbar();
     }
 
     // Function to hide the navbar after a certain period of inactivity
@@ -88,6 +89,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (window.pageYOffset >= sticky) {
             navbar.classList.add('sticky');
+            showNavbar();
         } else {
             navbar.classList.remove('sticky');
         }
